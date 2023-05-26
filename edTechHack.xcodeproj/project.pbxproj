@@ -15,6 +15,7 @@
 		B93B7A332A2040430055871F /* ClassesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A322A2040430055871F /* ClassesListView.swift */; };
 		B93B7A352A2045720055871F /* AddClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A342A2045720055871F /* AddClassView.swift */; };
 		B93B7A372A2047D60055871F /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A362A2047D60055871F /* ClassDetailView.swift */; };
+		B93B7A3B2A2141630055871F /* GameCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A3A2A2141630055871F /* GameCardsView.swift */; };
 		FA509EA42A20E402006717AF /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA509EA32A20E402006717AF /* ListCell.swift */; };
 		FA509EA62A2104B7006717AF /* SheetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA509EA52A2104B7006717AF /* SheetColor.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		B93B7A322A2040430055871F /* ClassesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesListView.swift; sourceTree = "<group>"; };
 		B93B7A342A2045720055871F /* AddClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassView.swift; sourceTree = "<group>"; };
 		B93B7A362A2047D60055871F /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
+		B93B7A3A2A2141630055871F /* GameCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardsView.swift; sourceTree = "<group>"; };
 		FA509EA32A20E402006717AF /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		FA509EA52A2104B7006717AF /* SheetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				B93B7A362A2047D60055871F /* ClassDetailView.swift */,
 				FA509EA32A20E402006717AF /* ListCell.swift */,
 				FA509EA52A2104B7006717AF /* SheetColor.swift */,
+				B93B7A3A2A2141630055871F /* GameCardsView.swift */,
 			);
 			path = edTechHack;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93B7A3B2A2141630055871F /* GameCardsView.swift in Sources */,
 				B93B7A372A2047D60055871F /* ClassDetailView.swift in Sources */,
 				B93B7A312A203D020055871F /* LoginView.swift in Sources */,
 				B93B7A352A2045720055871F /* AddClassView.swift in Sources */,

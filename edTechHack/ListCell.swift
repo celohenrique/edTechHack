@@ -78,6 +78,15 @@ struct Cell: View{
                         Cell(nome: student)
                     }
                 }.listStyle(.grouped)
+                NavigationLink(destination: GameCardsView() ) {
+                    Text("Start game")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .padding()
+                        .frame(width: 200, height: 50)
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
             }
         }
     }
