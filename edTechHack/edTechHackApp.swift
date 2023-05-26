@@ -11,7 +11,8 @@ import SwiftUI
 struct edTechHackApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            LoginView()
         }
     }
 }
