@@ -44,16 +44,18 @@ struct ClassesListView: View {
                 
                 List {
                     ForEach(classes.indices, id: \.self) { index in
-                        Text(classes[index].name)
-                            .contentShape(Rectangle())
-                            .onTapGesture {
-                                if isEditing {
-                                    selectedClass = classes[index]
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                                        showClassDetail = true
+                        NavigationLink(destination: ListCell(students: classes[index].students)){
+                            Text(classes[index].name)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    if isEditing {
+                                        selectedClass = classes[index]
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                            showClassDetail = true
+                                        }
                                     }
                                 }
-                            }
+                        }
                     }
                     .onDelete(perform: delete)
                 }
