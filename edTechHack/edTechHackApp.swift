@@ -13,6 +13,7 @@ struct edTechHackApp: App {
         WindowGroup {
 //            ContentView()
             LoginView()
+                .preferredColorScheme(.light)
         }
     }
 }
