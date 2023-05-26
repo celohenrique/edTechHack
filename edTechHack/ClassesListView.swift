@@ -10,7 +10,7 @@ import SwiftUI
 struct ClassesListView: View {
     @State private var showAddClass: Bool = false
     @State private var isEditing: Bool = false
-    @State private var classes: [Class] = [] // Lista de turmas
+    @State private var classes: [Class] = []
     
     var body: some View {
 
@@ -55,7 +55,7 @@ struct ClassesListView: View {
                     .onDelete(perform: delete)
                 }
                 .listStyle(GroupedListStyle())
-                .environment(\.editMode, .constant(isEditing ? EditMode.inactive : EditMode.active)) // Enables swipe to delete
+                .environment(\.editMode, .constant(isEditing ? EditMode.active : EditMode.inactive)) // here bggggugnjgug
                 
                 Button(action: {
                     showAddClass.toggle()
