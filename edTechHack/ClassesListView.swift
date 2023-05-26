@@ -11,9 +11,11 @@ struct ClassesListView: View {
     @State private var showAddClass: Bool = false
     @State private var isEditing: Bool = false
     @State private var classes: [Class] = []
+    @State private var selectedClass: Class? = nil
+
     
     var body: some View {
-
+        
         VStack {
             if classes.isEmpty {
                 Text("Olá, usuário")
@@ -43,13 +45,19 @@ struct ClassesListView: View {
                 
                 List {
                     ForEach(classes.indices, id: \.self) { index in
+                        
                         if isEditing {
+                            
                             NavigationLink(destination: ClassDetailView(classItem: classes[index])) {
                                 Text(classes[index].name)
                             }
                         } else {
-                            Text(classes[index].name)
-                      
+                            NavigationLink(destination: ListCell(students: classes[index].students)){
+                                Text(classes[index].name)
+                                    .onTapGesture {
+                                        print("clicado")
+                                    }
+                            }
                         }
                     }
                     .onDelete(perform: delete)
@@ -84,14 +92,14 @@ struct ClassesListView: View {
         .sheet(isPresented: $showAddClass) {
             AddClassView(classes: $classes)
         }
-    
-}
+        
+    }
     private func delete(at offsets: IndexSet) {
         classes.remove(atOffsets: offsets)
     }
-        
-}
     
+}
+
 
 struct ClassesListView_Previews: PreviewProvider {
     static var previews: some View {

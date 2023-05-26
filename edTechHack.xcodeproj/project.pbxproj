@@ -15,6 +15,8 @@
 		B93B7A332A2040430055871F /* ClassesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A322A2040430055871F /* ClassesListView.swift */; };
 		B93B7A352A2045720055871F /* AddClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A342A2045720055871F /* AddClassView.swift */; };
 		B93B7A372A2047D60055871F /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A362A2047D60055871F /* ClassDetailView.swift */; };
+		FA509EA42A20E402006717AF /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA509EA32A20E402006717AF /* ListCell.swift */; };
+		FA509EA62A2104B7006717AF /* SheetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA509EA52A2104B7006717AF /* SheetColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		B93B7A322A2040430055871F /* ClassesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesListView.swift; sourceTree = "<group>"; };
 		B93B7A342A2045720055871F /* AddClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassView.swift; sourceTree = "<group>"; };
 		B93B7A362A2047D60055871F /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
+		FA509EA32A20E402006717AF /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		FA509EA52A2104B7006717AF /* SheetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				B93B7A322A2040430055871F /* ClassesListView.swift */,
 				B93B7A342A2045720055871F /* AddClassView.swift */,
 				B93B7A362A2047D60055871F /* ClassDetailView.swift */,
+				FA509EA32A20E402006717AF /* ListCell.swift */,
+				FA509EA52A2104B7006717AF /* SheetColor.swift */,
 			);
 			path = edTechHack;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				B93B7A372A2047D60055871F /* ClassDetailView.swift in Sources */,
 				B93B7A312A203D020055871F /* LoginView.swift in Sources */,
 				B93B7A352A2045720055871F /* AddClassView.swift in Sources */,
+				FA509EA62A2104B7006717AF /* SheetColor.swift in Sources */,
+				FA509EA42A20E402006717AF /* ListCell.swift in Sources */,
 				B93B7A332A2040430055871F /* ClassesListView.swift in Sources */,
 				B93B7A252A1FEB600055871F /* ContentView.swift in Sources */,
 				B93B7A232A1FEB600055871F /* edTechHackApp.swift in Sources */,
@@ -291,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
