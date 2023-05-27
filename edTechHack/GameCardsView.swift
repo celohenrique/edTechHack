@@ -133,17 +133,29 @@ struct AnotherView: View {
                     }
                 }
             }.listStyle(.plain)
-            
-            Button(action: {
-                // Ação para salvar as opções selecionadas
-                print("Opções selecionadas:", selectedOptions)
-            }) {
-                Text("Salvar")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
+            HStack{
+                Button(action: {
+                    // Ação para salvar as opções selecionadas
+                    print("Opções selecionadas:", selectedOptions)
+                }) {
+                    Text("Salvar")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
+                .padding()
+                HStack{
+                    NavigationLink(destination: ContenteAR()) {
+                        Text("ARView")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                }
             }
             
             Spacer()

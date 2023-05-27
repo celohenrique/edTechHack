@@ -12,9 +12,9 @@ struct edTechHackApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            ContenteAR()
-//            LoginView()
-//                .preferredColorScheme(.light)
+//            ContenteAR()
+            LoginView()
+                .preferredColorScheme(.light)
         }
     }
 }
