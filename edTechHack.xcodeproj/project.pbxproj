@@ -17,8 +17,7 @@
 		B93B7A372A2047D60055871F /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A362A2047D60055871F /* ClassDetailView.swift */; };
 		B93B7A3B2A2141630055871F /* GameCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A3A2A2141630055871F /* GameCardsView.swift */; };
 		B93B7A3D2A2144410055871F /* ContenteAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A3C2A2144410055871F /* ContenteAR.swift */; };
-		B93B7A532A21B9B10055871F /* van.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B93B7A522A21B9B10055871F /* van.usdz */; };
-		B93B7A572A2242710055871F /* tati.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B93B7A562A2242710055871F /* tati.usdz */; };
+		B93B7A592A2247DB0055871F /* tati.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B93B7A582A2247DB0055871F /* tati.usdz */; };
 		FA509EA42A20E402006717AF /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA509EA32A20E402006717AF /* ListCell.swift */; };
 		FA509EA62A2104B7006717AF /* SheetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA509EA52A2104B7006717AF /* SheetColor.swift */; };
 /* End PBXBuildFile section */
@@ -35,8 +34,7 @@
 		B93B7A362A2047D60055871F /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
 		B93B7A3A2A2141630055871F /* GameCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardsView.swift; sourceTree = "<group>"; };
 		B93B7A3C2A2144410055871F /* ContenteAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenteAR.swift; sourceTree = "<group>"; };
-		B93B7A522A21B9B10055871F /* van.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = van.usdz; path = ../../van.usdz; sourceTree = "<group>"; };
-		B93B7A562A2242710055871F /* tati.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tati.usdz; path = ../../tati.usdz; sourceTree = "<group>"; };
+		B93B7A582A2247DB0055871F /* tati.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tati.usdz; path = ../../tati.usdz; sourceTree = "<group>"; };
 		FA509EA32A20E402006717AF /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		FA509EA52A2104B7006717AF /* SheetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,8 +53,7 @@
 		B93B7A162A1FEB600055871F = {
 			isa = PBXGroup;
 			children = (
-				B93B7A562A2242710055871F /* tati.usdz */,
-				B93B7A522A21B9B10055871F /* van.usdz */,
+				B93B7A582A2247DB0055871F /* tati.usdz */,
 				B93B7A212A1FEB600055871F /* edTechHack */,
 				B93B7A202A1FEB600055871F /* Products */,
 			);
@@ -157,8 +154,7 @@
 			files = (
 				B93B7A2A2A1FEB620055871F /* Preview Assets.xcassets in Resources */,
 				B93B7A272A1FEB620055871F /* Assets.xcassets in Resources */,
-				B93B7A532A21B9B10055871F /* van.usdz in Resources */,
-				B93B7A572A2242710055871F /* tati.usdz in Resources */,
+				B93B7A592A2247DB0055871F /* tati.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
