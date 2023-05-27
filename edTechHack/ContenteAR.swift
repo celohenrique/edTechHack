@@ -60,7 +60,7 @@ class ViewController: UIViewController, ARSessionDelegate {
         let results = arView.raycast(from: location, allowing: .estimatedPlane, alignment: .horizontal)
         
         if let firstResult = results.first {
-            let anchor = ARAnchor(name: "van", transform: firstResult.worldTransform)
+            let anchor = ARAnchor(name: "tati", transform: firstResult.worldTransform)
             arView.session.add(anchor: anchor)
         } else {
             print("Object placement failed - couldn't find surface")
@@ -80,7 +80,7 @@ class ViewController: UIViewController, ARSessionDelegate {
 
     func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
         for anchor in anchors {
-            if let anchorName = anchor.name, anchorName == "van" {
+            if let anchorName = anchor.name, anchorName == "tati" {
                 placeObject(named: anchorName, for: anchor)
             }
         }
