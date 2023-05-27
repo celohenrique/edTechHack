@@ -7,27 +7,26 @@
 
 import SwiftUI
 
-struct Cell: View{
-    
-    @State var checkmark: Bool = false
-    @State var nome: String
+struct Cell: View {
+    @State private var isSelected = false
+    let nome: String
+    let onCheckmarkTapped: (Bool) -> Void
     @State private var selectColor = false
     @State private var color: Color?
-
     
     var body: some View {
-        VStack{
-            HStack{
-                VStack{
+        VStack {
+            HStack {
+                VStack {
                     Text(nome)
-                        .font(.title3)
-                    Text("Titulo")
-                        .font(.subheadline)
+                        .font(.headline)
                 }
                 .padding()
+                
                 Spacer()
-                VStack{
-                    HStack(spacing: 50){
+                
+                VStack {
+                    HStack(spacing: 50) {
                         Image(systemName: "largecircle.fill.circle")
                             .font(.body)
                             .foregroundColor(color)
@@ -41,55 +40,77 @@ struct Cell: View{
                                     self.color = selectedColor
                                 })
                             }
-                                if !checkmark {
-                                    Image(systemName: "square")
-                                        .font(.body)
-                                        .foregroundColor(Color.red)
-                                        .onTapGesture {
-                                            checkmark.toggle()
-                                        }
-                                }
-                                else{
-                                    Image(systemName: "checkmark.square")
-                                        .font(.body)
-                                        .foregroundColor(Color.green)
-                                        .onTapGesture {
-                                            checkmark.toggle()
-                                        }
-                                }
-                            }
+                        if isSelected {
+                            Image(systemName: "checkmark.square")
+                                .font(.body)
+                                .foregroundColor(Color.green)
+                        } else {
+                            Image(systemName: "square")
+                                .font(.body)
+                                .foregroundColor(Color.red)
+                        }
                     }
-                    Spacer()
-                    
+                    .onTapGesture {
+                        isSelected.toggle()
+                        onCheckmarkTapped(isSelected)
+                    }
                 }
             }
         }
     }
+}
+
+struct ListCell: View {
+    @State var students: [String]
+    @State var selectedStudents: [String] = []
     
-    struct ListCell: View {
-        @State var students: [String]
-        
-        var body: some View {
-            VStack {
-                Text("Alunos:")
-                    .font(.title)
-                List{
-                    ForEach(students, id: \.self) { student in
-                        Cell(nome: student)
-                    }
-                }.listStyle(.grouped)
-                NavigationLink(destination: GameCardsView() ) {
-                    Text("Start game")
-                        .foregroundColor(.white)
-                        .font(.headline)
-                        .padding()
-                        .frame(width: 200, height: 50)
-                        .background(Color.blue)
-                        .cornerRadius(8)
+    var body: some View {
+        VStack {
+            Text("Alunos:")
+                .font(.title)
+            
+            List {
+                ForEach(students, id: \.self) { student in
+                    Cell(nome: student) { isSelected in
+                        if isSelected {
+                            selectedStudents.append(student)
+                        } else {
+                            if let index = selectedStudents.firstIndex(of: student) {
+                                selectedStudents.remove(at: index)
+                            }
+                        }
+                    }.padding()
                 }
+            }
+            .listStyle(.grouped)
+            
+            NavigationLink(destination: CardView(selectedStudents: selectedStudents)) {
+                Text("Start game")
+                    .foregroundColor(.white)
+                    .font(.headline)
+                    .padding()
+                    .frame(width: 200, height: 50)
+                    .background(Color.blue)
+                    .cornerRadius(8)
             }
         }
     }
+}
+
+//struct NextView: View {
+//    var selectedStudents: [String]
+//    
+//    var body: some View {
+//        VStack {
+//            Text("Selected Students:")
+//                .font(.title)
+//            List(selectedStudents, id: \.self) { student in
+//                Text(student)
+//            }
+//        }
+//    }
+//}
+
     
     
 //    struct ListCell_Previews: PreviewProvider {
@@ -97,3 +118,4 @@ struct Cell: View{
 //            Cell()
 //        }
 //    }
+
