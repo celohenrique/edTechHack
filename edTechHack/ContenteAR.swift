@@ -60,16 +60,17 @@ class ViewController: UIViewController, ARSessionDelegate {
         let results = arView.raycast(from: location, allowing: .estimatedPlane, alignment: .horizontal)
         
         if let firstResult = results.first {
-            let anchor = ARAnchor(name: "tati", transform: firstResult.worldTransform)
+            let anchor = ARAnchor(name: "tba", transform: firstResult.worldTransform)
             arView.session.add(anchor: anchor)
         } else {
             print("Object placement failed - couldn't find surface")
         }
     }
     
-    func placeObject(named entityName: String, for anchor: ARAnchor) {
+    func placeObject(named entityName: String, for anchor: ARAnchor, scale: Float = 0.06) {
         let entity = try! ModelEntity.loadModel(named: entityName)
-        
+        entity.scale = SIMD3<Float>(scale, scale, scale)  // Add this line to adjust the scale
+
         entity.generateCollisionShapes(recursive: true)
         arView.installGestures([.rotation, .translation], for: entity)
         
@@ -78,9 +79,10 @@ class ViewController: UIViewController, ARSessionDelegate {
         arView.scene.addAnchor(anchorEntity)
     }
 
+
     func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
         for anchor in anchors {
-            if let anchorName = anchor.name, anchorName == "tati" {
+            if let anchorName = anchor.name, anchorName == "tba" {
                 placeObject(named: anchorName, for: anchor)
             }
         }

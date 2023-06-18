@@ -17,7 +17,7 @@
 		B93B7A372A2047D60055871F /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A362A2047D60055871F /* ClassDetailView.swift */; };
 		B93B7A3B2A2141630055871F /* GameCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A3A2A2141630055871F /* GameCardsView.swift */; };
 		B93B7A3D2A2144410055871F /* ContenteAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B7A3C2A2144410055871F /* ContenteAR.swift */; };
-		B93B7A592A2247DB0055871F /* tati.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B93B7A582A2247DB0055871F /* tati.usdz */; };
+		B98957C72A3EF3410010910C /* tba.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B98957C62A3EF3410010910C /* tba.usdz */; };
 		FA509EA42A20E402006717AF /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA509EA32A20E402006717AF /* ListCell.swift */; };
 		FA509EA62A2104B7006717AF /* SheetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA509EA52A2104B7006717AF /* SheetColor.swift */; };
 /* End PBXBuildFile section */
@@ -34,7 +34,7 @@
 		B93B7A362A2047D60055871F /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
 		B93B7A3A2A2141630055871F /* GameCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardsView.swift; sourceTree = "<group>"; };
 		B93B7A3C2A2144410055871F /* ContenteAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenteAR.swift; sourceTree = "<group>"; };
-		B93B7A582A2247DB0055871F /* tati.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tati.usdz; path = ../../tati.usdz; sourceTree = "<group>"; };
+		B98957C62A3EF3410010910C /* tba.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tba.usdz; sourceTree = "<group>"; };
 		FA509EA32A20E402006717AF /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		FA509EA52A2104B7006717AF /* SheetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +53,7 @@
 		B93B7A162A1FEB600055871F = {
 			isa = PBXGroup;
 			children = (
-				B93B7A582A2247DB0055871F /* tati.usdz */,
+				B98957C62A3EF3410010910C /* tba.usdz */,
 				B93B7A212A1FEB600055871F /* edTechHack */,
 				B93B7A202A1FEB600055871F /* Products */,
 			);
@@ -154,7 +154,7 @@
 			files = (
 				B93B7A2A2A1FEB620055871F /* Preview Assets.xcassets in Resources */,
 				B93B7A272A1FEB620055871F /* Assets.xcassets in Resources */,
-				B93B7A592A2247DB0055871F /* tati.usdz in Resources */,
+				B98957C72A3EF3410010910C /* tba.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,7 @@
 				DEVELOPMENT_TEAM = 942Y8B46B9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = TATI;
+				INFOPLIST_KEY_CFBundleDisplayName = TDA;
 				INFOPLIST_KEY_NSCameraUsageDescription = "vamo usa ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -327,7 +327,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -342,7 +342,7 @@
 				DEVELOPMENT_TEAM = 942Y8B46B9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = TATI;
+				INFOPLIST_KEY_CFBundleDisplayName = TDA;
 				INFOPLIST_KEY_NSCameraUsageDescription = "vamo usa ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -363,7 +363,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

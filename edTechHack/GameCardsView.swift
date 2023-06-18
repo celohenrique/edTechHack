@@ -3,7 +3,9 @@ import SwiftUI
 struct CardView: View {
     var selectedStudents: [String]
     let subtitles = ["Passivo", "Agressivo", "Vítima", "Neutro", "Neutro"]
-    let loremArray = ["Fusce viverra, risus nec pellentesque.", "Nullam luctus egestas velit nec.", "Aliquam pulvinar massa sit amet."]
+    let loremArray = ["Na escola, um aluno é constantemente excluído pelos colegas. Eles o isolam, fazem piadas e o ignoram.",
+                      "Durante uma atividade em grupo, um dos alunos começa a insultar e humilhar verbalmente outro colega, de forma agressiva e ofensiva.",
+                      "Um aluno novo, de outra etnia, é alvo de discriminação por parte de alguns colegas."]
     @State var number = 0
     
     @State var displayedPhrase: String = ""
