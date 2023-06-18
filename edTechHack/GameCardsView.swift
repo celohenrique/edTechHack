@@ -3,8 +3,8 @@ import SwiftUI
 struct CardView: View {
     var selectedStudents: [String]
     let subtitles = ["Passivo", "Agressivo", "Vítima", "Neutro", "Neutro"]
-    let loremArray = ["Na escola, um aluno é constantemente excluído pelos colegas. Eles o isolam, fazem piadas e o ignoram.",
-                      "Durante uma atividade em grupo, um dos alunos começa a insultar e humilhar verbalmente outro colega, de forma agressiva e ofensiva.",
+    let loremArray = ["Na escola, um aluno é constantemente excluído pelos colegas. Eles o isolam e fazem piadas.",
+                      "Numa atividade em grupo, um dos alunos começa a humilhar verbalmente outro, de forma agressiva.",
                       "Um aluno novo, de outra etnia, é alvo de discriminação por parte de alguns colegas."]
     @State var number = 0
     
@@ -94,7 +94,7 @@ struct AnotherView: View {
                 .foregroundColor(.black)
                 .padding()
             
-            List{
+            List {
                 ForEach(selectedStudents.indices, id: \.self) { index in
                     VStack(spacing: 10) {
                         Text(selectedStudents[index])
@@ -168,17 +168,3 @@ struct AnotherView: View {
         }
     }
 }
-
-
-//struct ContentView: View {
-//    var body: some View {
-//        let selectedStudents = ["Aluno 1", "Aluno 2", "Aluno 3", "Aluno 4", "Aluno 5"]
-//        CardView(selectedStudents: selectedStudents)
-//    }
-//}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
